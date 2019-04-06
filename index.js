@@ -30,26 +30,17 @@ module.exports = function (babel) {
 
             //cookie的引用
             if (cookie_types.includes(`${specifier.local.name}`)) {
-              //node.source.value => kiana-js
-              //specifier.local.name => flatten
-              //path => kiana-js/arrays/flatten
               return types.importDeclaration([types.importSpecifier(specifier.local, specifier.local)], types.stringLiteral(`${node.source.value}/kiana/cookie/${specifier.local.name}`))
             }
 
 
             //localStorage的引用
             if (local_types.includes(`${specifier.local.name}`)) {
-              //node.source.value => kiana-js
-              //specifier.local.name => flatten
-              //path => kiana-js/arrays/flatten
               return types.importDeclaration([types.importSpecifier(specifier.local, specifier.local)], types.stringLiteral(`${node.source.value}/kiana/localStorage/${specifier.local.name}`))
             }
 
             //sessionStorage的引用
             if (session_types.includes(`${specifier.local.name}`)) {
-              //node.source.value => kiana-js
-              //specifier.local.name => flatten
-              //path => kiana-js/arrays/flatten
               return types.importDeclaration([types.importSpecifier(specifier.local, specifier.local)], types.stringLiteral(`${node.source.value}/kiana/sessionStorage/${specifier.local.name}`))
             }
 
