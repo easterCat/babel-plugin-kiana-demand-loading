@@ -8,6 +8,7 @@ const array_types = require("./types/arrayTypes");
 const cookie_types = require("./types/cookieTypes");
 const local_types = require("./types/localTypes");
 const session_types = require("./types/sessionTypes");
+const util_types = require("./types/utilTypes");
 
 module.exports = function (babel) {
   return {
@@ -44,6 +45,11 @@ module.exports = function (babel) {
               return types.importDeclaration([types.importSpecifier(specifier.local, specifier.local)], types.stringLiteral(`${node.source.value}/kiana/sessionStorage/${specifier.local.name}`))
             }
 
+
+            //util的引用
+            if (util_types.includes(`${specifier.local.name}`)) {
+              return types.importDeclaration([types.importSpecifier(specifier.local, specifier.local)], types.stringLiteral(`${node.source.value}/kiana/utils/${specifier.local.name}`))
+            }
 
             return types.importDeclaration([types.importDefaultSpecifier(specifier.local)], types.stringLiteral(`${node.source.value}/kiana/${specifier.local.name}`))
           });
