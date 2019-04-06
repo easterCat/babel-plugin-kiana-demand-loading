@@ -1,19 +1,45 @@
 {
-  "name": "babel-plugin-kiana-demand-loading",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_from": "babel-plugin-kiana-demand-loading",
+  "_id": "babel-plugin-kiana-demand-loading@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-PFQVVxvbYC1iJYcAFVbiBzI0eUio5AYN8oyWtDMl37YSSVyymRBbKwJu5sflLaYQ1qlQAXzW74OvEPSooOMMnA==",
+  "_location": "/babel-plugin-kiana-demand-loading",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "babel-plugin-kiana-demand-loading",
+    "name": "babel-plugin-kiana-demand-loading",
+    "escapedName": "babel-plugin-kiana-demand-loading",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/babel-plugin-kiana-demand-loading/-/babel-plugin-kiana-demand-loading-1.0.0.tgz",
+  "_shasum": "30388681fc1047c55481007c6ebcfc9b9ee3bb90",
+  "_spec": "babel-plugin-kiana-demand-loading",
+  "_where": "D:\\comProject\\pc.haocai",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/easterCat/babel-plugin-kiana-demand-loading/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "",
+  "homepage": "https://github.com/easterCat/babel-plugin-kiana-demand-loading#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "babel-plugin-kiana-demand-loading",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/easterCat/babel-plugin-kiana-demand-loading.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/easterCat/babel-plugin-kiana-demand-loading/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/easterCat/babel-plugin-kiana-demand-loading#readme"
+  "version": "1.0.0"
 }
